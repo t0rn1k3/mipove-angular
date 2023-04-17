@@ -1,4 +1,5 @@
 @import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
 
 .nav {
     list-style: none;
@@ -8,7 +9,7 @@
     width: 500px;
 }
 .nav li {
-    background-color: $body;
+    background-color: $bgc-2;
     padding: 10px 15px;
     border-radius: 30px;
     box-shadow: 2px 2px 2px grey;
