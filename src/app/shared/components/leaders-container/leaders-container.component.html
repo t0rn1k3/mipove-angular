@@ -1,0 +1,8 @@
+<div class="rating__leaders">
+    <h2>Leaders</h2>
+    <div class="leaders container">
+        <div class="leader-users" *ngFor="let leader of leaders">
+           <app-user-card class="user-cards" [leadersList]="leader" ></app-user-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
+
+.category-card {
+    width: 277px; 
+    padding: 15px 20px;
+    background-color: #f5f5f5;
+    border: 1px solid $bgc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.category-card a {
+    color: $bgc;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+}
+.category-card:hover a {
+    color: #f5f5f5;
+}
+.category-card:hover {
+    background-color: $bgc;
+}
+a {
+    text-decoration: none;
+}
