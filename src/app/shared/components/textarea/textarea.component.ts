@@ -7,9 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class TextareaComponent {
 
-  @Input() labelText! : string;
-  @Input() rows! : string;
-  @Input() cols! : string;
+  @Input() labelText : string | undefined;
+  @Input() rows : string | undefined;
+  @Input() cols : string | undefined;
 
-  
+
 }

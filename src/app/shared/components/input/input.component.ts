@@ -9,9 +9,7 @@ export class InputComponent {
 
   
   @Input() type : string = '';
-  @Input() placeHolder! : string ;
-  @Input() icon! :  string ;
-  @Input() labelText : string = '';
+  @Input() labelText : string | undefined;
   @Input() isDirty = false;
 
   onChange(){
