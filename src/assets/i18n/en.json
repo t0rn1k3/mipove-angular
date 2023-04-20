@@ -1,0 +1,18 @@
+{
+    "MAIN" : "Main",
+    "CATEGORY" :  "Categories",
+    "APPS" : "Applications",
+    "LOGIN" : "Log in",
+    "REGISTRATION" : "Registration",
+    "AUTH" : "Authorisation",
+    "LOGOUT" : "Log out",
+    "CONTACT" : "Contact",
+    "MESSAGE_US" : "Send a message",
+    "NAME" : "Name",
+    "SURNAME" : "Surname",
+    "EMAIL" : "Email",
+    "NUM" : "Phone",
+    "JOB" : "Write us about your activities",
+    "SEND" : "Send",
+    "FIND" : "Find a professional quickly and easily"
+}

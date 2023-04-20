@@ -1,24 +1,24 @@
 <div class="contact-container container">
     <div class="contact-details">
-        <h3>კონტაქტი</h3>
+        <h3>{{ "CONTACT" | translate }}</h3>
         <div class="contact">
             <app-contact-details [icon]="'email'" [text]="'mipove@info.com'" ></app-contact-details>
             <app-contact-details [icon]="'phone'" [text]="'555462090'" ></app-contact-details>
         </div>
     </div>
     <div class="contact-form">
-        <h3>დაგვიკავშირდით</h3>
+        <h3>{{ "MESSAGE_US" | translate }}</h3>
         <form action="" class="form">
             <div class="input-fields">
-              <app-input [labelText]="'სახელი'"></app-input>
-              <app-input [labelText]="'გვარი'"></app-input>
+              <app-input [labelText]="'NAME' | translate"></app-input>
+              <app-input [labelText]="'SURNAME' | translate"></app-input>
             </div>
             <div class="input-fields">
-              <app-input [labelText]="'ელ.ფოსტა'"></app-input>
-              <app-input [labelText]="'ნომერი'"></app-input>
+              <app-input [labelText]="'EMAIL' | translate"></app-input>
+              <app-input [labelText]="'NUM' | translate"></app-input>
             </div>
-            <app-textarea [labelText]="'მოგვწერეთ თქვენი საქმიანობის შესახებ'" [rows]="'7'"></app-textarea>
-            <app-button [text]="'გაგზავნა'"></app-button>
+            <app-textarea [labelText]="'JOB' | translate" [rows]="'7'"></app-textarea>
+            <app-button [text]="'SEND' | translate"></app-button>
         </form>
     </div>
 </div>

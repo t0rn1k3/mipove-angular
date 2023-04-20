@@ -17,13 +17,14 @@ export class LeadersContainerComponent implements OnInit {
       name : 'Irle',
       profession : 'chrome art',
       phone : 555462090,
-      imagePath : './assets/images/profile-images/irle.jpg'
+      imagePath : './assets/images/profile-images/irle.jpg',
+      instagram : 'https://www.instagram.com/__irle___/',
     },
     {
       name : "Green's handcafting",
       profession : 'Hand crafting',
       phone : 555462090,
-      imagePath : './assets/images/profile-images/greens.jpg'
+      imagePath : './assets/images/profile-images/greens.jpg',
     },
     {
       name : 'Irle',
