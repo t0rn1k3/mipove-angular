@@ -1,0 +1,29 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
+
+.about-us {
+    display: flex;
+    color: $bgc;
+    border: 1px solid $bgc;
+}
+.unity {
+    width: 50%;
+    height: 400px;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h3 {
+    font-size: 22px;
+}
+.about {
+    width: 50%;
+    padding: 0 35px;
+    line-height: 25px;
+}
+.bold {
+    font-weight: bold;
+}

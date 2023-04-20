@@ -1,0 +1,28 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
+.contact-container {
+    background-color: #2b2b2b;
+    display: flex;
+    padding-bottom: 20px;
+    color: $text;
+}
+.contact-details {
+    width: 35%;
+}
+.contact-form {
+    width: 50%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.input-fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+h3 {
+    font-size: 22px;
+}
