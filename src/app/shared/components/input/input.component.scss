@@ -4,6 +4,8 @@
 
 .input-element {
     color: $text;
+    display: flex;
+    flex-direction: column;
 }
 .input {
     width: 220px;

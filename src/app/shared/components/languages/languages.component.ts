@@ -19,7 +19,6 @@ export class LanguagesComponent implements OnInit {
 
   setLang(lang: string) {
     this.translateService.use(lang);
-    console.log('lang')
   }
 
 }

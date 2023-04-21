@@ -1,0 +1,14 @@
+<div class="auth">
+    <h2>{{ "AUTH" | translate }}</h2>
+    <div class="auth-form">
+        <form action="" class="form">
+            <app-input [labelText]="'EMAIL' | translate"></app-input>
+            <app-input [labelText]="'PASSWORD' | translate"></app-input>
+            <app-button [text]="'LOGIN' | translate" ></app-button>
+        </form>
+        <div class="go__to__reg">
+            <p>{{ "ACCOUNT" | translate }}</p>
+            <a routerLink="/registration"> {{ "GO_TO_REG" | translate }} </a>
+        </div>
+    </div>
+</div>
