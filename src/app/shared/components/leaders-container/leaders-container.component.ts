@@ -18,26 +18,15 @@ export class LeadersContainerComponent implements OnInit {
       profession : 'chrome art',
       phone : 555462090,
       imagePath : './assets/images/profile-images/irle.jpg',
-      instagram : 'https://www.instagram.com/__irle___/',
+      linkPath : ''
     },
     {
       name : "Green's handcafting",
       profession : 'Hand crafting',
       phone : 555462090,
       imagePath : './assets/images/profile-images/greens.jpg',
-    },
-    {
-      name : 'Irle',
-      profession : 'chrome art',
-      phone : 555462090,
-      imagePath : './assets/images/profile-images/irle.jpg'
-    },
-    {
-      name : "Green's handcafting",
-      profession : 'Hand crafting',
-      phone : 555462090,
-      imagePath : './assets/images/profile-images/greens.jpg'
-    },
+      linkPath : '/greens&handcrafting'
+    }
   ]
 
   constructor(){}
