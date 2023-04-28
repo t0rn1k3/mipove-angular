@@ -1,0 +1,11 @@
+<div class="comments">
+    <h3 class="comments-title">Comments</h3>
+    <div class="comment-form-title">write comment</div>
+    COMMENT FORM
+    <div class="commnets-cont">
+        <div *ngFor="let comment of comments">
+           <app-single-comment [comment]="comment"></app-single-comment>
+        </div>
+    </div>
+
+</div>
