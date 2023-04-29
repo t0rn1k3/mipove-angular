@@ -1,0 +1,5 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <app-textarea class="textarea" formControlName="title" ngDefaultControl [rows]="'5'" [cols]="'5'"></app-textarea>
+    <button type="submit" [disabled]="form.invalid">{{ submitLabel }}</button>
+    <button type="button" *ngIf="hasCancelButton"></button>
+</form>

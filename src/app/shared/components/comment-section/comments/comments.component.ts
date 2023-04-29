@@ -10,9 +10,8 @@ import { CommentsService } from 'src/app/shared/services/comments.service';
 export class CommentsComponent implements OnInit {
 
 
-  @Input() currentUserId : string | undefined
 
-  comments : CommentsInterface[] = [];
+  comments  : CommentsInterface[] = [];
 
   constructor(
     private commentsService : CommentsService
@@ -22,6 +21,10 @@ export class CommentsComponent implements OnInit {
     this.commentsService.getComments().subscribe((comments) => {
       this.comments = comments;
     })
+  }
+
+  addComment({text , parentId} : {text : any, parentId : null | string} ) :void {
+    console.log(text, parentId)
   }
 
 }
