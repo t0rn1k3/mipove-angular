@@ -12,18 +12,16 @@ export class CommentFormComponent implements OnInit {
   @Input() hasCancelButton : boolean = false
   @Input() initialText : string = ''
 
-  @Output() handleSubmit = new EventEmitter<string>()
+  @Output() handleSubmit = new EventEmitter<string>();
 
 
-  //@ts-ignore
-  public form : FormGroup
+  form! : FormGroup
 
   constructor(
     private fb : FormBuilder
   ){}
 
   onSubmit() {
-    console.log(this.form.value)
     this.handleSubmit.emit(this.form.value.title)
   }
 

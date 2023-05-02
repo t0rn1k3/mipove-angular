@@ -9,7 +9,7 @@ import { CommentsService } from 'src/app/shared/services/comments.service';
 })
 export class CommentsComponent implements OnInit {
 
-
+  @Input() currentUserId!: string;
 
   comments  : CommentsInterface[] = [];
 
@@ -23,8 +23,16 @@ export class CommentsComponent implements OnInit {
     })
   }
 
-  addComment({text , parentId} : {text : any, parentId : null | string} ) :void {
-    console.log(text, parentId)
+  addComment({
+    text , parentId
+  } : {
+    text : any;
+    parentId : string | null;
+  } ) :void {
+    console.log('addComment' , text, parentId)
+    // this.commentsService.createComment(text, parentId).subscribe(createdComment => {
+    //   this.comments = [...this.comments, createdComment]
+    // })
   }
 
 }
