@@ -6,6 +6,10 @@
     width: 90%;
     margin: 50px auto;
     color: $text;
+    position: relative;
+}
+.cabinet {
+    display: flex;
 }
 .personal-information {
     display: flex;
@@ -46,5 +50,20 @@ img {
 h2 {
     color: $bgc;
     text-align: center;
-    font-size: 35px;
+    font-size: 28px;
+    padding: 30px;
+}
+.add {
+    color: $bgc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
+.add-icon {
+    width: 40px;
+    cursor: pointer;
 }
