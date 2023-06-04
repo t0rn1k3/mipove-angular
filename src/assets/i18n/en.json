@@ -7,12 +7,19 @@
     "AUTH" : "Authorisation",
     "LOGOUT" : "Log out",
     "CONTACT" : "Contact",
-    "MESSAGE_US" : "Send a message",
+    "MESSAGE_US" : "Send us a message",
     "NAME" : "Name",
     "SURNAME" : "Surname",
     "EMAIL" : "Email",
+    "PASSWORD" : "Password",
+    "REP_PASSWORD" : "Repeat password",
     "NUM" : "Phone",
     "JOB" : "Write us about your activities",
     "SEND" : "Send",
-    "FIND" : "Find a professional quickly and easily"
+    "FIND" : "Find a professional quickly and easily",
+    "ACCOUNT": "If you don't have an account",
+    "GO_TO_REG" : "Go to registration", 
+    "ABOUT" : "About us",
+    "ABOUT_TEXT" : "From 2023 year MIPOVE.GE offers you a easy way to connect with people in your desired profession in the shortest time. Also, MIPOVE.GE allows you to develop and advance. If your activity matches any of the professions on our site and you want to be on this list yourself, Fill out the application bellow and send it to us.",
+    "WORKS" : "Works"
 }

@@ -3,4 +3,5 @@ export interface LeadersInterface {
     profession : string,
     phone: number,
     imagePath : string
+    linkPath : string
 }

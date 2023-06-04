@@ -19,7 +19,6 @@ export class CommentsComponent implements OnInit {
   ){}
 
   addComment({text, parentId}: {text : string, parentId : null | string}) {
-    console.log('add comment')
     this.commentService.createComment(text, parentId).subscribe(createdComment => {
       this.comments = [...this.comments, createdComment]
     })

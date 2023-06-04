@@ -1,4 +1,4 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
-    <textarea formControlName="title" cols="30" rows="10"></textarea>
+<form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <textarea class="textarea" formControlName="title" placeholder="write comment"></textarea>
     <button type="submit" [disabled]="form.invalid"> {{submitLabel}} </button>
 </form>

@@ -1,0 +1,18 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
+
+.add {
+    color: $bgc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+.add-icon {
+    width: 40px;
+    cursor: pointer;
+}

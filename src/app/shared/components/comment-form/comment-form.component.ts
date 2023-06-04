@@ -29,7 +29,6 @@ export class CommentFormComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.form.value)
     this.handleSubmit.emit(this.form.value.title)
   }
 

@@ -1,7 +1,7 @@
 <div class="auth">
     <h2>{{ "AUTH" | translate }}</h2>
     <div class="auth-form">
-        <form action="" class="form">
+        <form action="" class="form" [formGroup]="loginForm" (ngSubmit)="login()">
             <app-input [labelText]="'EMAIL' | translate"></app-input>
             <app-input [labelText]="'PASSWORD' | translate"></app-input>
             <app-button [text]="'LOGIN' | translate" ></app-button>

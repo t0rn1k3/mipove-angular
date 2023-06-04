@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { RouterModule } from '@angular/router';
 import { HeaderComponent } from "./components/header/header.component";
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
@@ -15,6 +16,18 @@ import { ButtonComponent } from './components/button/button.component';
 import { ContactDetailsComponent } from './components/contact-details/contact-details.component';
 import { translatePipe } from "./pipe/translate.pipe";
 import { MainBannerComponent } from './components/main-banner/main-banner.component';
+import { AuthComponent } from './components/auth/auth.component';
+import { RegComponent } from './components/reg/reg.component';
+import { CategoryContainerComponent } from './components/category-container/category-container.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { CommentsService } from "./services/comments.service";
+import { NoSanitizePipe } from "./pipe/nosanitize.pipe";
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommentsComponent } from './components/comments/comments.component';
+import { CommentFormComponent } from './components/comment-form/comment-form.component';
+import { CommentComponent } from './components/comment/comment.component';
+import { ApplicationsContainerComponent } from './components/applications-container/applications-container.component';
 
 @NgModule({
     declarations : [
@@ -32,19 +45,40 @@ import { MainBannerComponent } from './components/main-banner/main-banner.compon
         ButtonComponent,
         ContactDetailsComponent,
         translatePipe,
-        MainBannerComponent
+        MainBannerComponent,
+        AuthComponent,
+        RegComponent,
+        CategoryContainerComponent,
+        UserProfileComponent,
+        ContactContainerComponent,
+        CommentsComponent,
+        CommentFormComponent,
+        CommentComponent,
+        NoSanitizePipe,
+        ApplicationsContainerComponent
     ],
     imports : [
-        CommonModule
+        CommonModule,
+        RouterModule,
+        ReactiveFormsModule,
+        FormsModule
     ],
     exports : [
         HeaderComponent,
         LeadersContainerComponent,
-        CategoryCardComponent,
+        CategoryContainerComponent,
         AboutUsComponent,
         ContactContainerComponent,
-        MainBannerComponent
+        MainBannerComponent,
+        AuthComponent,
+        RegComponent,
+        UserProfileComponent,
+        CommentsComponent,
+        ApplicationsContainerComponent
     ],
+    providers: [
+        CommentsService
+    ]
 })
 
 export class sharedModule{

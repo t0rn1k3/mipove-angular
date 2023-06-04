@@ -13,7 +13,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { APP_INITIALIZER } from '@angular/core';
 
 import { TranslateService } from './shared/services/translate.service';
+import { ApplicationsComponent } from './pages/applications/applications.component';
+import { translatePipe } from './shared/pipe/translate.pipe';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {AngularFireModule} from '@angular/fire/compat';
+import { environment } from 'src/environments/environments';
 
 export function setupTranslateServiceFactory(
   service: TranslateService): Function {
@@ -27,12 +32,20 @@ return () => service.use('en');
     RegostrationComponent,
     MainPageComponent,
     CategoriesComponent,
+    ApplicationsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     sharedModule,
-    HttpClientModule
+    HttpClientModule, 
+    FormsModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase)
+  ],
+  exports : [
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     TranslateService,
