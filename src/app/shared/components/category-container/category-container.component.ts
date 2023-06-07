@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CategoryInterface } from '../../interfaces/category.interface';
+import { CategoryService } from '../../services/category.service';
 
 @Component({
   selector: 'app-category-container',
@@ -8,36 +8,21 @@ import { CategoryInterface } from '../../interfaces/category.interface';
 })
 export class CategoryContainerComponent {
 
-    // @ts-ignore
-    categories : CategoryInterface = []
+  
 
+    categories = []
 
-  cards = [
-    {
-      name: 'ავეჯის დამზადება/ შეკეთება',
-      linkPath : '/furniture'
-    },
-    {
-      name: 'ხელოვნება',
-      linkPath : '/art'
-    },
-    {
-      name: 'ქრომირება',
-      linkPath : '/chrome'
-    },
-    {
-      name: 'საათის შეკეთება',
-      linkPath : '/watches'
-    },
-    {
-      name: 'ტყავის დამუშავება',
-      linkPath : '/leather'
-    },
-    {
-      name: 'დიზაინი',
-      linkPath : '/design'
+    constructor(
+      private categoryService : CategoryService
+    ){}
+    
+    ngOnInit(): void {
+      this.categoryService.getCategories()
+        .subscribe(
+          res => this.categories = res,
+          err => console.log(err)
+        )
     }
-  ]
 
 
 }

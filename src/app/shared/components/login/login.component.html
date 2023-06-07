@@ -2,5 +2,6 @@
     <div class="user">
         <img src="assets/icons/user.png" alt="user">
     </div>
-    <a routerLink="/authorization" class="enter">{{ "LOGIN" | translate }}</a>
+    <a routerLink="/authorization" class="enter" *ngIf="!auth.loggedIn()" >{{ "LOGIN" | translate }}</a>
+    <a style="cursor : pointer"  *ngIf="auth.loggedIn()" (click)="auth.logOutUser()" >{{ "LOGOUT" | translate }}</a>
 </div>

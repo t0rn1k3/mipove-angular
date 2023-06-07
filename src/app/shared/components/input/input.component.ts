@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-input',
@@ -11,6 +12,7 @@ export class InputComponent {
   @Input() type : string = '';
   @Input() labelText : string | undefined;
   @Input() isDirty = false;
+  @Input() control! : FormControl
 
   onChange(){
     this.isDirty = true;

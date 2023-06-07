@@ -8,17 +8,17 @@
     </div>
     <div class="contact-form">
         <h3>{{ "MESSAGE_US" | translate }}</h3>
-        <form action="" class="form">
+        <form action="" class="form" [formGroup]="contactForm" >
             <div class="input-fields">
-              <app-input [labelText]="'NAME' | translate"></app-input>
-              <app-input [labelText]="'SURNAME' | translate"></app-input>
+              <app-input [control]="$any(contactForm.get('name'))"  [labelText]="'NAME' | translate"></app-input>
+              <app-input [control]="$any(contactForm.get('surname'))" [labelText]="'SURNAME' | translate"></app-input>
             </div>
             <div class="input-fields">
-              <app-input [labelText]="'EMAIL' | translate"></app-input>
-              <app-input [labelText]="'NUM' | translate"></app-input>
+              <app-input [control]="$any(contactForm.get('email'))"  [labelText]="'EMAIL' | translate"></app-input>
+              <app-input [control]="$any(contactForm.get('phone'))"  [labelText]="'NUM' | translate"></app-input>
             </div>
             <app-textarea [labelText]="'JOB' | translate" [rows]="'7'"></app-textarea>
-            <app-button [text]="'SEND' | translate"></app-button>
+            <app-button  [text]="'SEND' | translate"></app-button>
         </form>
     </div>
 </div>

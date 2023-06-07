@@ -1,9 +1,9 @@
 <div class="reg">
     <h2>{{ "REGISTRATION" | translate }}</h2>
     <form class="reg-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()" >
-        <app-input [type]="'text'" [labelText]="'NAME' | translate"></app-input>
-        <app-input [type]="'email'" [labelText]="'EMAIL' | translate"></app-input>
-        <app-input [type]="'password'" [labelText]="'PASSWORD' | translate"></app-input>
+        <app-input [control]="$any(registerForm.get('name'))" [type]="'text'" [labelText]="'NAME' | translate"></app-input>
+        <app-input [control]="$any(registerForm.get('email'))"  [type]="'email'" [labelText]="'EMAIL' | translate"></app-input>
+        <app-input [control]="$any(registerForm.get('password'))"  [type]="'password'" [labelText]="'PASSWORD' | translate"></app-input>
         <app-button [type]="'submit'"  [text]="'REGISTRATION' | translate" ></app-button>
     </form>
 </div>

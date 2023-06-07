@@ -1,0 +1,10 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
+.warning {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 200px;
+    color: $bgc;
+}

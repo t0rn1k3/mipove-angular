@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/compat/auth'
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -7,49 +7,31 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
+  private _registerUrl = 'http://localhost:3000/api/register';
+  private _loginUrl = 'http://localhost:3000/api/login'
+
   constructor(
-    private firebase : AngularFireAuth,
+    private http : HttpClient,
     private router : Router
   ) { }
 
-  public login(
-    email : string,
-    password : string
-  ) {
-    this.firebase.signInWithEmailAndPassword(email, password).then(()=> {
-      localStorage.setItem('token', 'true')
-      this.router.navigate(['/'])
-    }, err => {
-      console.log(err.message)
-      this.router.navigate(['/authorization'])
-    }
-    )
+
+  registerUser(user : any){
+    return this.http.post<any>(this._registerUrl, user)
   }
 
-
-  public registration(
-    name : string,
-    email : string,
-    password : string
-  ){
-    this.firebase.createUserWithEmailAndPassword(email, password).then(()=> {
-      alert('succes')
-      this.router.navigate(['/authorization'])
-    }, err => {
-      console.log(err.message)
-      this.router.navigate(['/registration'])
-    }
-    )
+  loginUser(user : any) {
+    return this.http.post<any>(this._loginUrl, user)
   }
 
-
-  public logout() {
-    this.firebase.signOut().then( ()=> {
-      localStorage.removeItem('token')
-      this.router.navigate(['/authorization'])
-    }, err => {
-      console.log(err.message)
-    }
-    )
+  logOutUser() {
+    localStorage.removeItem('token')
+    this.router.navigate([' '])
+    console.log('works')
   }
+
+  loggedIn() {
+    return !!localStorage.getItem('token')
+  }
+
 }

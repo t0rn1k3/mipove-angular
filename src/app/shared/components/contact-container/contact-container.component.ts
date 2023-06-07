@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-contact-container',
@@ -6,5 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-container.component.scss']
 })
 export class ContactContainerComponent {
+
+  constructor(
+    private formBuilder : FormBuilder
+  ){}
+
+  public contactForm = this.formBuilder.group({
+    name : ['', Validators.required],
+    surname : ['', Validators.required],
+    email : ["", [Validators.required]],
+    phone : ['', Validators.required]
+  })
 
 }

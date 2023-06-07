@@ -1,4 +1,4 @@
 <div class="input-element">
     <label [for]="labelText">{{ labelText }}</label>
-    <input class="input" [type]="type" (change)="onChange()" [id]="labelText">
+    <input [formControl]="control" class="input" [type]="type" (change)="onChange()" [id]="labelText">
 </div>

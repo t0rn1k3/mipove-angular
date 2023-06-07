@@ -28,6 +28,7 @@ import { CommentsComponent } from './components/comments/comments.component';
 import { CommentFormComponent } from './components/comment-form/comment-form.component';
 import { CommentComponent } from './components/comment/comment.component';
 import { ApplicationsContainerComponent } from './components/applications-container/applications-container.component';
+import { WarningMessageComponent } from './components/warning-message/warning-message.component';
 
 @NgModule({
     declarations : [
@@ -55,7 +56,8 @@ import { ApplicationsContainerComponent } from './components/applications-contai
         CommentFormComponent,
         CommentComponent,
         NoSanitizePipe,
-        ApplicationsContainerComponent
+        ApplicationsContainerComponent,
+        WarningMessageComponent
     ],
     imports : [
         CommonModule,
@@ -74,7 +76,8 @@ import { ApplicationsContainerComponent } from './components/applications-contai
         RegComponent,
         UserProfileComponent,
         CommentsComponent,
-        ApplicationsContainerComponent
+        ApplicationsContainerComponent,
+        WarningMessageComponent
     ],
     providers: [
         CommentsService

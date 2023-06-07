@@ -8,13 +8,15 @@ import { AuthorizationComponent } from './pages/authorization/authorization.comp
 import { RegostrationComponent } from './pages/regostration/regostration.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule , HTTP_INTERCEPTORS} from '@angular/common/http';
+
 
 import { APP_INITIALIZER } from '@angular/core';
 
 import { TranslateService } from './shared/services/translate.service';
 import { ApplicationsComponent } from './pages/applications/applications.component';
 import { translatePipe } from './shared/pipe/translate.pipe';
+import { TokenInterceptorService } from './shared/services/token-interceptor.service';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {AngularFireModule} from '@angular/fire/compat';
@@ -56,6 +58,11 @@ return () => service.use('en');
         TranslateService
       ],
       multi: true
+    },
+    {
+      provide : HTTP_INTERCEPTORS,
+      useClass : TokenInterceptorService,
+      multi : true  
     }
   ],
   bootstrap: [AppComponent]
