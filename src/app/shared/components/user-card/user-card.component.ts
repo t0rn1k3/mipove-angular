@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class UserCardComponent implements OnInit {
 
   // @ts-ignore
-  @Input() leadersList;
+  @Input() leaders;
 
   constructor() {}
 

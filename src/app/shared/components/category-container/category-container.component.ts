@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CategoryService } from '../../services/category.service';
+import { CategoryInterface } from '../../interfaces/category.interface';
 
 @Component({
   selector: 'app-category-container',
@@ -10,7 +11,8 @@ export class CategoryContainerComponent {
 
   
 
-    categories = []
+  
+    categories : CategoryInterface[] = []
 
     constructor(
       private categoryService : CategoryService

@@ -21,6 +21,7 @@ import { TokenInterceptorService } from './shared/services/token-interceptor.ser
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {AngularFireModule} from '@angular/fire/compat';
 import { environment } from 'src/environments/environments';
+import { ProfessionalsPageComponent } from './pages/professionals-page/professionals-page.component';
 
 export function setupTranslateServiceFactory(
   service: TranslateService): Function {
@@ -34,7 +35,8 @@ return () => service.use('en');
     RegostrationComponent,
     MainPageComponent,
     CategoriesComponent,
-    ApplicationsComponent
+    ApplicationsComponent,
+    ProfessionalsPageComponent
   ],
   imports: [
     BrowserModule,

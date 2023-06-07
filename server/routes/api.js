@@ -53,53 +53,88 @@ router.get('/categories', (req, res) => {
         {
         "_id" : "1",
         "name": "ავეჯის დამზადება/ შეკეთება",
-        "users" : [
-        ]
       },
       {
         "_id" : "2",
         "name": "მხატვრობა",
-        "users" : [
-            {
-                "user_id" : "01",
-                "username" : "კაჭკაჭა",
-                "profilePicture" : "https://www.instagram.com/p/CqTd8vErH54/"
-            }
-        ]
       },
       {
         "_id" : "3",
         "name": "ქრომირება",
-        "users" : [
-            {
-                "user_id" : "03",
-                "username" : "ირლე",
-                "profilePicture" : "https://www.instagram.com/p/CsgTwCxsNkS/"
-            }
-        ]
       },
       {
         "_id" : "4",
         "name": "საათის შეკეთება",
-        "users" : []
       },
       {
         "_id" : "5",
-        "name": "ტყავის დამუშავება",
-        "users" : [
-            {
-                "user_id" : "05",
-                "username" : "Green's Handcrafting ",
-                "profileImage" : "https://www.instagram.com/p/Cpdt67hsoj3/",
-            }
-        ]
+        "name": "ტყავის დამუშავება"
       },
       {
         "_id" : "6",
         "name": "დიზაინი",
-        "users" : [
-        ]
       }
     ]
     res.json(categories)
+})
+
+router.get('/professionals', (req , res) => {
+    let professionals = [
+        {
+            "id" : "01",
+            "name" : "კაჭკაჭა",
+            "profilePicture" : "/assets/images/profile-images/kach.jpg"
+        },
+        {
+            "id" : "2",
+            "name" : "ამირან კაკაურიძე",
+            "profilePicture" : "/assets/images/profile-images/amiran.jpg"
+        },
+        {
+            "id" : "3",
+            "name" : "Green's Handcrafting ",
+            "profileImage" : "/assets/images/profile-images/greens.jpg",
+        },
+        {
+            "id" : "4",
+            "name" : "ირლე",
+            "profilePicture" : "/assets/images/profile-images/irle.jpg"
+        }
+    ]
+    res.json(professionals)
+})
+
+
+router.get('/leaders', (req, res) => {
+    let leaders = [
+        {
+            "id" : "1",
+            "name" : "ირლე",
+            "profession" : "ქრომირება",
+            "phone" : "555555555",
+            "imagePath" : "/assets/images/profile-images/irle.jpg"
+        },
+        {
+            "id" : "2",
+            "name" : "Green's Handcafting",
+            "profession" : "ტყავის დამუშავება",
+            "phone" : "555555555",
+            "imagePath" : "/assets/images/profile-images/greens.jpg"
+        },
+        {
+            "id" : "3",
+            "name" : "ამირან კაკაურიძე",
+            "profession" : "მხატვრობა",
+            "phone" : "555555555",
+            "imagePath" : "/assets/images/profile-images/amiran.jpg"
+        },
+        {
+            "id" : "3",
+            "name" : "კაჭკაჭა",
+            "profession" : "მხატვრობა",
+            "phone" : "555555555",
+            "imagePath" : "/assets/images/profile-images/kach.jpg"
+        },
+    ]
+    res.json(leaders)
 })

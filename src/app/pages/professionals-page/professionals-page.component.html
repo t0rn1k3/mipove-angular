@@ -1,0 +1,12 @@
+<div class="professionals" *ngFor="let professional of professionals" >
+    <a class="profesional">
+        <div class="image">
+            <img [src]="professional.profilePicture" [alt]="professional.name">
+        </div>
+        <div class="info">
+            <div class="name">
+                {{ professional.name }}
+            </div>
+        </div>
+    </a>
+</div>

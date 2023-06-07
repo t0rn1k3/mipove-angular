@@ -5,6 +5,7 @@ import { CategoriesComponent } from './pages/categories/categories.component';
 import { ApplicationsComponent } from './pages/applications/applications.component';
 import { AuthorizationComponent } from './pages/authorization/authorization.component';
 import { RegostrationComponent } from './pages/regostration/regostration.component';
+import { ProfessionalsPageComponent } from './pages/professionals-page/professionals-page.component';
 
 const routes: Routes = [
   {path: '', component: MainPageComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path : 'applications', component : ApplicationsComponent},
   {path : 'authorization', component: AuthorizationComponent},
   {path: 'registration' , component: RegostrationComponent},
+  {path:  'professionals/:id', component : ProfessionalsPageComponent }
 
 ];
 

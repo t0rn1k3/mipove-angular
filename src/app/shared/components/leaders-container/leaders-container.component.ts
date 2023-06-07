@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { LeadersInterface } from '../../interfaces/leaders.interface';
+import { CategoryService } from '../../services/category.service';
+CategoryService
 
 @Component({
   selector: 'app-leaders-container',
@@ -9,31 +11,19 @@ import { LeadersInterface } from '../../interfaces/leaders.interface';
 })
 export class LeadersContainerComponent implements OnInit {
 
-  // @ts-ignore
-  leadersList : LeadersInterface = [];
+  leaders : LeadersInterface[] = []
 
-  leaders = [
-    {
-      name : 'Irle',
-      profession : 'chrome art',
-      phone : 555462090,
-      imagePath : './assets/images/profile-images/irle.jpg',
-      linkPath : ''
-    },
-    {
-      name : "Green's handcafting",
-      profession : 'Hand crafting',
-      phone : 555462090,
-      imagePath : './assets/images/profile-images/greens.jpg',
-      linkPath : '/greens&handcrafting'
-    }
-  ]
-
-  constructor(){}
+  constructor(
+    private leaderService : CategoryService
+  ){}
 
   ngOnInit(): void {
+    this.leaderService.getLeaders()
+      .subscribe(
+        res => this.leaders = res,
+        err => console.log(err)
+      )
   }
-
 
 
 }
