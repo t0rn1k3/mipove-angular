@@ -1,31 +1,56 @@
 @import 'src/assets/styles/colors';
 @import 'src/assets/styles/fonts'; 
 
-.profesional {
-    width: 70%;
-    margin: 25px auto;
-    border: 1px solid $bgc;
-    border-radius: 12px;
+.professionals {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
     padding: 20px;
-    box-sizing: border-box;
 }
-a {
-    display: block;
+.user-card {
+    width: 200px;
+    height: 270px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
 }
-.info {
-    margin-left: 70px;
-}
-.image {
-    width: 170px;
-    height: 170px;
-}
-.name {
-    font-size: 18px;
+.picture {
+    width: 230px;
+    height: 270px;
 }
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 12px;
 }
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: black, $alpha: .2);
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: $text;
+}
+.info-hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-color: rgba($color: $bgc, $alpha: .7);
+    transform: translateY(55%);
+    padding: 0 5px;
+    transition: .3s;
+}
+.user-card:hover .info-hover {
+    background-color: rgba($color: $bgc, $alpha: 1);
+    transform: translateY(0);
+}
+.info-hover h4, p, span {
+    padding: 8px 5px;
+} 

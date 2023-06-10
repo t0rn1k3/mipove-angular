@@ -2,13 +2,13 @@
     <div class="contact-details">
         <h3>{{ "CONTACT" | translate }}</h3>
         <div class="contact">
-            <app-contact-details [icon]="'email'" [text]="'mipove@info.com'" ></app-contact-details>
+            <app-contact-details [icon]="'email'" [text]="'mipove88@gmail.com'" ></app-contact-details>
             <app-contact-details [icon]="'phone'" [text]="'555462090'" ></app-contact-details>
         </div>
     </div>
     <div class="contact-form">
         <h3>{{ "MESSAGE_US" | translate }}</h3>
-        <form action="" class="form" [formGroup]="contactForm" >
+        <form action="" class="form" [formGroup]="contactForm" (submit)="onSubmit(contactForm.value)">
             <div class="input-fields">
               <app-input [control]="$any(contactForm.get('name'))"  [labelText]="'NAME' | translate"></app-input>
               <app-input [control]="$any(contactForm.get('surname'))" [labelText]="'SURNAME' | translate"></app-input>
@@ -17,8 +17,8 @@
               <app-input [control]="$any(contactForm.get('email'))"  [labelText]="'EMAIL' | translate"></app-input>
               <app-input [control]="$any(contactForm.get('phone'))"  [labelText]="'NUM' | translate"></app-input>
             </div>
-            <app-textarea [labelText]="'JOB' | translate" [rows]="'7'"></app-textarea>
-            <app-button  [text]="'SEND' | translate"></app-button>
+            <app-textarea [control]="$any(contactForm.get('textarea'))" [labelText]="'JOB' | translate" [rows]="'7'"></app-textarea>
+            <app-button  [text]="'SEND' | translate" ></app-button>
         </form>
     </div>
 </div>

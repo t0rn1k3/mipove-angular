@@ -1,11 +1,11 @@
 .langs {
-    display: flex;
-    flex-direction: column;
+    display: flex; 
 }
 .flag {
     width: 20px;
     height: 20px;
     cursor: pointer;
+    margin: 0 5px;
 }
 img {
     width: 100%;

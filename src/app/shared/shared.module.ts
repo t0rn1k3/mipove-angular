@@ -1,6 +1,8 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from "@angular/common/http";
+
 import { HeaderComponent } from "./components/header/header.component";
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
@@ -22,6 +24,7 @@ import { CategoryContainerComponent } from './components/category-container/cate
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { CommentsService } from "./services/comments.service";
 import { NoSanitizePipe } from "./pipe/nosanitize.pipe";
+
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommentsComponent } from './components/comments/comments.component';
@@ -63,7 +66,8 @@ import { WarningMessageComponent } from './components/warning-message/warning-me
         CommonModule,
         RouterModule,
         ReactiveFormsModule,
-        FormsModule
+        FormsModule,
+        HttpClientModule
     ],
     exports : [
         HeaderComponent,
@@ -77,7 +81,8 @@ import { WarningMessageComponent } from './components/warning-message/warning-me
         UserProfileComponent,
         CommentsComponent,
         ApplicationsContainerComponent,
-        WarningMessageComponent
+        WarningMessageComponent,
+        UserCardComponent
     ],
     providers: [
         CommentsService

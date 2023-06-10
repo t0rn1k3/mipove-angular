@@ -47,3 +47,6 @@ a {
     background-color: rgba($color: $bgc, $alpha: 1);
     transform: translateY(0);
 }
+.info-hover h4, p, span {
+    padding: 8px 5px;
+} 

@@ -22,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {AngularFireModule} from '@angular/fire/compat';
 import { environment } from 'src/environments/environments';
 import { ProfessionalsPageComponent } from './pages/professionals-page/professionals-page.component';
+import { EmailService } from './shared/services/email.service';
 
 export function setupTranslateServiceFactory(
   service: TranslateService): Function {
@@ -52,6 +53,7 @@ return () => service.use('en');
     FormsModule
   ],
   providers: [
+    EmailService,
     TranslateService,
     {
       provide: APP_INITIALIZER,

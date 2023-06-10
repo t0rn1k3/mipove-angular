@@ -10,6 +10,8 @@ export class UserCardComponent implements OnInit {
   // @ts-ignore
   @Input() leaders;
 
+
+
   constructor() {}
 
   ngOnInit(): void {
