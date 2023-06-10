@@ -19,6 +19,7 @@
     align-items: center;
 }
 .input-fields {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,4 +29,26 @@ h3 {
     font-size: 22px;
     text-align: center;
     padding: 10px 0 20px;
+}
+
+@media screen and (max-width : 1100px) {
+    .contact-container {
+        justify-content: space-around;
+    }
+    .contact-form {
+        width: 530px;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+   .contact-container {
+    flex-direction: column-reverse;
+    align-items: center;
+   }
+   .contact-details h3 {
+    display: none;
+   }
+   .contact-details {
+    margin-top: 60px;
+   }
 }

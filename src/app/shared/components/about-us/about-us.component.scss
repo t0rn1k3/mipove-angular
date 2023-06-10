@@ -29,3 +29,19 @@ h3 {
 .bold {
     font-weight: bold;
 }
+
+
+@media screen and (max-width : 850px) {
+    .about-us {
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+    .about {
+        width: 100%;
+        height: 200px;
+    }
+    .unity {
+        width: 100%;
+        height: 200px;
+    }
+}

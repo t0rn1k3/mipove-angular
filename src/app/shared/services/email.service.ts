@@ -22,7 +22,7 @@ export class EmailService {
       map(
         (response) => {
             if (response) {
-              this.router.navigate([''])
+              response
             }
         },
         (error : any) => {
