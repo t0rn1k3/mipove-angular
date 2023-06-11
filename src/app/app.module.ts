@@ -10,6 +10,8 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { HttpClientModule , HTTP_INTERCEPTORS} from '@angular/common/http';
 
+import {MatIconModule} from '@angular/material/icon';
+
 
 import { APP_INITIALIZER } from '@angular/core';
 
@@ -46,7 +48,8 @@ return () => service.use('en');
     HttpClientModule, 
     FormsModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    MatIconModule
   ],
   exports : [
     ReactiveFormsModule,

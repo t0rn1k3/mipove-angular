@@ -27,6 +27,7 @@ import { NoSanitizePipe } from "./pipe/nosanitize.pipe";
 
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatIconModule } from "@angular/material/icon";
 import { CommentsComponent } from './components/comments/comments.component';
 import { CommentFormComponent } from './components/comment-form/comment-form.component';
 import { CommentComponent } from './components/comment/comment.component';
@@ -60,14 +61,15 @@ import { WarningMessageComponent } from './components/warning-message/warning-me
         CommentComponent,
         NoSanitizePipe,
         ApplicationsContainerComponent,
-        WarningMessageComponent
+        WarningMessageComponent,
     ],
     imports : [
         CommonModule,
         RouterModule,
         ReactiveFormsModule,
         FormsModule,
-        HttpClientModule
+        HttpClientModule,
+        MatIconModule
     ],
     exports : [
         HeaderComponent,
