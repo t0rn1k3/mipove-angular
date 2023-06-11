@@ -1,4 +1,7 @@
 <div class="input-element">
     <label [for]="labelText">{{ labelText }}</label>
     <input [formControl]="control" class="input" [type]="type" (change)="onChange()" [id]="labelText">
+    <div class="error" *ngIf="control.invalid && isDirty">
+        {{getErrorMessage()}}
+      </div>
 </div>

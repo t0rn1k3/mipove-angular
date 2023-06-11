@@ -3,6 +3,9 @@ import { AuthService } from '../../services/auth.service';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
+import { EmailValidator } from '../../validators/email.validator';
+import { PasswordValidator } from '../../validators/password.validator';
+
 
 @Component({
   selector: 'app-reg',
@@ -19,8 +22,8 @@ export class RegComponent implements OnInit {
 
   public registerForm = this.formBuilder.group({
     name : ['', Validators.required],
-    email: ['', [Validators.required,]],
-    password: ['', [Validators.required,]],
+    email: ['', [Validators.required, EmailValidator.validateEmail]],
+    password: ['', [Validators.required, PasswordValidator.validatePassword]],
   })
 
 

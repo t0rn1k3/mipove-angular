@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { EmailService } from '../../services/email.service';
+import { EmailValidator } from '../../validators/email.validator';
 
 
 @Component({
@@ -18,7 +19,7 @@ export class ContactContainerComponent implements OnInit {
   public contactForm = this.formBuilder.group({
     name : ['', Validators.required],
     surname : ['', Validators.required],
-    email : ["", [Validators.required]],
+    email : ["", [Validators.required, EmailValidator.validateEmail]],
     phone : ['', Validators.required],
     textarea : ['', Validators.required]
   })

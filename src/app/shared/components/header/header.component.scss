@@ -77,3 +77,9 @@
             text-decoration: underline;
         }   
 }
+
+@media screen and (max-width : 650px) {
+    .user__and__langs {
+        flex-direction: column-reverse;
+    }
+}

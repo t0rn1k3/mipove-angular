@@ -18,7 +18,7 @@
               <app-input [control]="$any(contactForm.get('phone'))"  [labelText]="'NUM' | translate"></app-input>
             </div>
             <app-textarea [control]="$any(contactForm.get('textarea'))" [labelText]="'JOB' | translate" [rows]="'7'"></app-textarea>
-            <app-button  [text]="'SEND' | translate" ></app-button>
+            <app-button [disable]="contactForm.invalid" [text]="'SEND' | translate"></app-button>
         </form>
     </div>
 </div>
