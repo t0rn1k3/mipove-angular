@@ -1,4 +1,4 @@
-<div class="categories container">
+<div class="categories">
         <div class="category-card" *ngFor="let category of ('CATEGORIES' | translate)">
             <a [routerLink]="['/professionals', category.id]">{{ category.CAT | translate }}</a>
         </div>

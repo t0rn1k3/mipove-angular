@@ -51,6 +51,10 @@ module.exports = router
 router.get('/categories', (req, res) => {
     let categories =  [
         {
+            "_id" : "07",
+            "name" : "All"
+        },
+        {
         "_id" : "1",
         "name": "ავეჯის დამზადება/ შეკეთება",
       },

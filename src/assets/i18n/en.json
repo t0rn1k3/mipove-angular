@@ -26,6 +26,9 @@
     "WARNING" : "Page will be add soon !",
         "CATEGORIES" : [
             {
+                "CAT" : "All"
+            },
+            {
               "CAT": "Furniture"
             },
             {
