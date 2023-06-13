@@ -1,19 +1,4 @@
 <div class="tags">
     <app-category-container></app-category-container>
-    <div class="professionals">
-        <div *ngFor="let professional of professionals" >
-            <a   class="user-card">
-                <div class="picture">
-                    <div class="shadow"></div>
-                    <img [src]="professional.profilePicture" [alt]="professional.name"/>
-                </div>
-                <div class="info-hover">
-                    <h4>{{ professional.name }}</h4>
-                    <p>{{ professional.profession}}</p>
-                    <span>{{ professional.phone }}</span>
-                </div>
-            </a> 
-            
-        </div>
-    </div>
+    <app-professioanls></app-professioanls>
 </div>

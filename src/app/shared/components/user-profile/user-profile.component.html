@@ -1,21 +1,21 @@
 <div class="user-profile">
-    <div class="add">
+    <!-- <div class="add">
         <span>დაამატეთ ნამუშევრები</span>
         <img class="add-icon" src="assets/icons/add.svg" alt="add">
-    </div>
+    </div> -->
     <div class="personal-information">
         <div class="image">
-            <img src="assets/images/profile-images/greens.jpg" alt="profile image">
+            <img [src]="profile.profilePicture" [alt]="profile.name">
         </div>
         <div class="contact-information">
-            <div class="name">Green's handcrafting</div>
+            <div class="name">{{profile.name}}</div>
             <div class="num">
                 <img class="icon" src="assets/icons/phone.svg" alt="">
-                <span>555555555</span>
+                <span>{{profile.phone}}</span>
             </div>
             <div class="num">
                 <img class="icon" src="assets/icons/email.svg" alt="">
-                <span>greens@gmail.com</span>
+                <span>{{ profile.email }}</span>
             </div>
         </div>
     </div>

@@ -8,7 +8,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { LanguagesComponent } from './components/languages/languages.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
-import { CategoryCardComponent } from './components/category-card/category-card.component';
 import { LeadersContainerComponent } from './components/leaders-container/leaders-container.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactContainerComponent } from './components/contact-container/contact-container.component';
@@ -33,6 +32,7 @@ import { CommentFormComponent } from './components/comment-form/comment-form.com
 import { CommentComponent } from './components/comment/comment.component';
 import { ApplicationsContainerComponent } from './components/applications-container/applications-container.component';
 import { WarningMessageComponent } from './components/warning-message/warning-message.component';
+import { ProfessioanlsComponent } from './components/professioanls/professioanls.component';
 
 @NgModule({
     declarations : [
@@ -41,7 +41,6 @@ import { WarningMessageComponent } from './components/warning-message/warning-me
         LoginComponent,
         LanguagesComponent,
         UserCardComponent,
-        CategoryCardComponent,
         LeadersContainerComponent,
         AboutUsComponent,
         ContactContainerComponent,
@@ -62,6 +61,7 @@ import { WarningMessageComponent } from './components/warning-message/warning-me
         NoSanitizePipe,
         ApplicationsContainerComponent,
         WarningMessageComponent,
+        ProfessioanlsComponent,
     ],
     imports : [
         CommonModule,
@@ -84,7 +84,9 @@ import { WarningMessageComponent } from './components/warning-message/warning-me
         CommentsComponent,
         ApplicationsContainerComponent,
         WarningMessageComponent,
-        UserCardComponent
+        UserCardComponent,
+        ProfessioanlsComponent,
+        UserProfileComponent
     ],
     providers: [
         CommentsService

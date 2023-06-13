@@ -11,8 +11,8 @@
 }
 
 .category-card {
-    width: 277px; 
-    padding: 15px 20px;
+    width: 250px; 
+    padding: 10px;
     background-color: #f5f5f5;
     border: 1px solid $bgc;
     border-radius: 25px;
@@ -20,18 +20,16 @@
     transition: 0.3s;
     margin: 7px;
 }
-.category-card a {
+ a {
     color: $bgc;
     font-weight: bold;
     display: block;
     text-align: center;
     font-size: 15px;
 }
-.category-card:hover a {
-    color: #f5f5f5;
-}
 .category-card:hover {
     background-color: $bgc;
+    color: $text;
 }
 
 @media screen and (max-width: 1100px ) {

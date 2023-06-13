@@ -23,8 +23,8 @@ import { TokenInterceptorService } from './shared/services/token-interceptor.ser
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {AngularFireModule} from '@angular/fire/compat';
 import { environment } from 'src/environments/environments';
-import { ProfessionalsPageComponent } from './pages/professionals-page/professionals-page.component';
 import { EmailService } from './shared/services/email.service';
+import { ProfessionalProfilePageComponent } from './pages/professional-profile-page/professional-profile-page.component';
 
 export function setupTranslateServiceFactory(
   service: TranslateService): Function {
@@ -39,7 +39,7 @@ return () => service.use('en');
     MainPageComponent,
     CategoriesComponent,
     ApplicationsComponent,
-    ProfessionalsPageComponent
+    ProfessionalProfilePageComponent,
   ],
   imports: [
     BrowserModule,

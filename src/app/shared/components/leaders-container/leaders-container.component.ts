@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 import { LeadersInterface } from '../../interfaces/leaders.interface';
 import { CategoryService } from '../../services/category.service';
 CategoryService
@@ -11,18 +11,17 @@ CategoryService
 })
 export class LeadersContainerComponent implements OnInit {
 
-  leaders : LeadersInterface[] = []
+
+ leaders : LeadersInterface[] = []
 
   constructor(
     private leaderService : CategoryService
   ){}
 
   ngOnInit(): void {
-    this.leaderService.getLeaders()
-      .subscribe(
-        res => this.leaders = res,
-        err => console.log(err)
-      )
+
+    this.leaders = this.leaderService.getLeaders()
+
   }
 
 

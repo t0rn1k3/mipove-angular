@@ -1,7 +1,6 @@
-
 <div class="professionals">
     <div *ngFor="let professional of professionals" >
-        <a   class="user-card">
+        <a routerLink="/professionals/{{ professional.id }}"  class="user-card">
             <div class="picture">
                 <div class="shadow"></div>
                 <img [src]="professional.profilePicture" [alt]="professional.name"/>
@@ -14,5 +13,3 @@
         </a> 
         
     </div>
-    
-</div>

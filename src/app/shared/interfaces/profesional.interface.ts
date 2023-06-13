@@ -1,7 +1,9 @@
 export interface ProfessionalInterface {
     id : string
     name : string
+    tags : string[]
     profilePicture : string
-    phone : number
+    phone : string
     profession : string
+    email : string
 }

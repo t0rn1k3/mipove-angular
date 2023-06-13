@@ -1,5 +1,5 @@
-<div class="categories">
-        <div class="category-card" *ngFor="let category of ('CATEGORIES' | translate)">
-            <a [routerLink]="['/professionals', category.id]">{{ category.CAT | translate }}</a>
-        </div>
+<div class="categories" *ngIf="categories">
+        <a class="category-card" *ngFor="let category of categories"  routerLink="/tag/{{ category.name }}" >
+           {{ category.name }}
+        </a>
 </div>

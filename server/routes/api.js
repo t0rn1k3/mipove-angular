@@ -89,28 +89,32 @@ router.get('/professionals', (req , res) => {
             "name" : "კაჭკაჭა",
             "profilePicture" : "/assets/images/profile-images/kach.jpg",
             "phone" : "555555555",
-            "profession" : "მხატვრობა"
+            "profession" : "მხატვრობა",
+            "tags" : ['Painting', 'Design']
         },
         {
             "id" : "2",
             "name" : "ამირან კაკაურიძე",
             "profilePicture" : "/assets/images/profile-images/amiran.jpg",
             "phone" : "555555555",
-            "profession" : "მხატვრობა"
+            "profession" : "მხატვრობა",
+            "tags" : ['Painting']
         },
         {
             "id" : "3",
             "name" : "Green's Handcrafting ",
             "profileImage" : "/assets/images/profile-images/greens.jpg",
             "phone" : "555555555",
-            "profession" : "ტყავის დამუშავება"
+            "profession" : "ტყავის დამუშავება",
+            "tags" : ['Leather']
         },
         {
             "id" : "4",
             "name" : "ირლე",
             "profilePicture" : "/assets/images/profile-images/irle.jpg",
             "phone" : "555555555",
-            "profession" : "ქრომირება"
+            "profession" : "ქრომირება",
+            "tags" : ['Chrome']
         }
     ]
     res.json(professionals)

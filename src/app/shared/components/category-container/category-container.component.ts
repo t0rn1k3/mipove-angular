@@ -19,11 +19,7 @@ export class CategoryContainerComponent {
     ){}
     
     ngOnInit(): void {
-      this.categoryService.getCategories()
-        .subscribe(
-          res => this.categories = res,
-          err => console.log(err)
-        )
+      this.categories = this.categoryService.getCategories()
     }
 
 

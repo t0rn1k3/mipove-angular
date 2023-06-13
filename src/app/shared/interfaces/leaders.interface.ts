@@ -1,7 +1,7 @@
 export interface LeadersInterface {
+    id : string
     name : string,
     profession : string,
-    phone: number,
-    imagePath : string
-    linkPath : string
+    phone: string,
+    profilePicture : string
 }
