@@ -50,7 +50,7 @@ export class RegComponent implements OnInit {
         res => {
           console.log(res)
           localStorage.setItem('token', res.token)
-          this.router.navigate([''])
+          this.router.navigate(['/success'])
         },
         err => console.log(err) 
       )

@@ -12,7 +12,7 @@ export class CategoriesComponent implements OnInit {
 
   
 
-  professionals : ProfessionalInterface[] =[]
+  professionals : ProfessionalInterface[] =[  ]
 
   constructor(
     private categoryService : CategoryService,

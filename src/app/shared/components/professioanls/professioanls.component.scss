@@ -4,8 +4,10 @@
 .professionals {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    justify-content: space-around;
+    margin: 50px auto;
     padding: 20px;
+    max-width: 1400px;
 }
 .user-card {
     width: 200px;
@@ -52,5 +54,22 @@ a {
     transform: translateY(0);
 }
 .info-hover h4, p, span {
-    padding: 8px 5px;
+    padding: 6px 5px;
 } 
+
+@media screen and (max-width : 500px) {
+    .user-card {
+        width: 130px;
+        height: 170px;
+    }
+    .picture {
+        width: 130px;
+        height: 170px;
+    }
+    a{
+        font-size: 13px;
+    }
+    .info-hover h4, p, span {
+        padding: 5px 2px;
+    } 
+}

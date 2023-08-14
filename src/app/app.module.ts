@@ -22,6 +22,7 @@ import { TokenInterceptorService } from './shared/services/token-interceptor.ser
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {AngularFireModule} from '@angular/fire/compat';
+import { AngularFireStorageModule } from "@angular/fire/compat/storage";
 import { environment } from 'src/environments/environments';
 import { EmailService } from './shared/services/email.service';
 import { ProfessionalProfilePageComponent } from './pages/professional-profile-page/professional-profile-page.component';
@@ -49,6 +50,7 @@ return () => service.use('en');
     FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireStorageModule,
     MatIconModule
   ],
   exports : [

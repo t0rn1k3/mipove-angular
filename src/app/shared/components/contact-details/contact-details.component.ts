@@ -9,5 +9,6 @@ export class ContactDetailsComponent {
 
   @Input() text : string | undefined;
   @Input() icon : string | undefined;
+  @Input() role : string | undefined;
 
 }

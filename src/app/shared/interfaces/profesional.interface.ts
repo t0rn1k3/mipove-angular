@@ -6,4 +6,8 @@ export interface ProfessionalInterface {
     phone : string
     profession : string
     email : string
+    facebook : string
+    instagram : string
+    webPage : string
+    works : string[]
 }

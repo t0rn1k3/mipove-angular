@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LeadersInterface } from '../../interfaces/leaders.interface';
 
 @Component({
   selector: 'app-user-card',
@@ -8,7 +9,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class UserCardComponent implements OnInit {
 
   // @ts-ignore
-  @Input() leaders;
+  @Input() leaders ;
+
 
 
 

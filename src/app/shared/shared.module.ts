@@ -33,6 +33,7 @@ import { CommentComponent } from './components/comment/comment.component';
 import { ApplicationsContainerComponent } from './components/applications-container/applications-container.component';
 import { WarningMessageComponent } from './components/warning-message/warning-message.component';
 import { ProfessioanlsComponent } from './components/professioanls/professioanls.component';
+import { SuccessfulMsgComponent } from './components/successful-msg/successful-msg.component';
 
 @NgModule({
     declarations : [
@@ -62,6 +63,7 @@ import { ProfessioanlsComponent } from './components/professioanls/professioanls
         ApplicationsContainerComponent,
         WarningMessageComponent,
         ProfessioanlsComponent,
+        SuccessfulMsgComponent,
     ],
     imports : [
         CommonModule,
@@ -86,7 +88,8 @@ import { ProfessioanlsComponent } from './components/professioanls/professioanls
         WarningMessageComponent,
         UserCardComponent,
         ProfessioanlsComponent,
-        UserProfileComponent
+        UserProfileComponent,
+        SuccessfulMsgComponent
     ],
     providers: [
         CommentsService

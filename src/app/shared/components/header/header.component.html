@@ -1,9 +1,9 @@
-<header class=" header">
+<header class="header">
     <button class="hamburger" type="button" mat-icon-button  (click)="toggleActive()">
         <mat-icon class="mat-icon-rtl-mirror">{{ !isActive ? 'menu' : 'close' }}</mat-icon>
     </button>
-    <nav>
-        <ul class="mobile-nav">
+    <nav  class="mobile-nav">
+        <ul>
             <li><a routerLink="">{{ "MAIN" | translate }}</a></li>
             <li><a routerLink="/categories">{{ "CATEGORY" | translate}}</a></li>
             <li><a routerLink="/applications">{{ "APPS" | translate }}</a></li>
@@ -15,6 +15,6 @@
     <app-navbar></app-navbar>
     <div class="user__and__langs">
         <app-languages></app-languages>
-        <app-login></app-login>
+        <!-- <app-login></app-login> -->
     </div>
 </header>

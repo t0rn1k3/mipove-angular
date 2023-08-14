@@ -1,4 +1,4 @@
-import { Component , OnInit , Directive, HostBinding, HostListener} from '@angular/core';
+import { Component , OnInit , HostBinding,} from '@angular/core';
 
 @Component({
   selector: 'app-header', 
@@ -14,7 +14,6 @@ export class HeaderComponent implements OnInit {
 
   toggleActive(): void {
     this.isActive = !this.isActive;
-    console.log('click')
   }
 
 

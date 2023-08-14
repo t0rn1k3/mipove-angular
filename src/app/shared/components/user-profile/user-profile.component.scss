@@ -21,11 +21,30 @@
 .image {
     width: 220px;
     height: 300px;
+    margin: 10px;
+    transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
 }
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.3s;
+    z-index: 10;
+
+}
+.image:hover{
+    transform: scale(1.2);
+}
+.shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $bgc, $alpha: 0.3);
 }
 .contact-information {
     margin-left: 30px;
@@ -42,6 +61,10 @@ img {
 }
 .num span {
     margin-left: 15px;
+}
+a {
+    color: $text;
+    transition: 0.3s;
 }
 .icon {
     width: 17px;
@@ -66,4 +89,59 @@ h2 {
 .add-icon {
     width: 40px;
     cursor: pointer;
+}
+.user-works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+svg {
+    transition: 0.3s;
+}
+.path {
+    fill: $text;
+    transition: 0.3s;
+}
+.social:hover .svg {
+    transform: scale(1.2);
+}
+.social:hover .path {
+    fill: #4460A0;
+}
+.fill {
+    fill : $text;
+}
+.insta:hover {
+    transform: scale(1.2);
+}
+.insta:hover .fill {
+    fill: url(#MyGradient);
+}
+.web:hover {
+    transform: scale(1.2);
+}
+.web:hover .fill {
+    fill: $body;
+}
+
+
+
+@media screen and (max-width : 1000px) {
+    .personal-information {
+        width : 400px
+    }
+    .image {
+        width: 150px;
+        height: 170px;
+    }
+    .name {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .personal-information {
+        flex-direction: column;
+        width: 100%;
+    }
 }

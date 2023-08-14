@@ -1,5 +1,5 @@
 <div class="login">
-    <div class="user">
+    <div *ngIf="auth.loggedIn()" class="user">
         <img src="assets/icons/user.png" alt="user">
     </div>
     <a routerLink="/authorization" class="enter" *ngIf="!auth.loggedIn()" >{{ "LOGIN" | translate }}</a>

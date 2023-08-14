@@ -6,6 +6,7 @@ import { ApplicationsComponent } from './pages/applications/applications.compone
 import { AuthorizationComponent } from './pages/authorization/authorization.component';
 import { RegostrationComponent } from './pages/regostration/regostration.component';
 import { ProfessionalProfilePageComponent } from './pages/professional-profile-page/professional-profile-page.component';
+import { SuccessfulMsgComponent } from './shared/components/successful-msg/successful-msg.component';
 
 const routes: Routes = [
   {path: '', component: MainPageComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path : 'professionals/:id', component: ProfessionalProfilePageComponent}, 
   {path : 'authorization', component: AuthorizationComponent},
   {path: 'registration' , component: RegostrationComponent},
+  {path: 'successful' , component: SuccessfulMsgComponent},
 
 ];
 

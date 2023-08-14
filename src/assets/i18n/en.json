@@ -1,6 +1,6 @@
 {
     "MAIN" : "Main",
-    "CATEGORY" :  "Categories",
+    "CATEGORY" :  "Professionals",
     "APPS" : "Applications",
     "LOGIN" : "Log in",
     "REGISTRATION" : "Registration",
@@ -20,31 +20,39 @@
     "ACCOUNT": "If you don't have an account",
     "GO_TO_REG" : "Go to registration", 
     "ABOUT" : "About us",
-    "LEADERS" : "Leaders",
+    "LEADERS" : "Recently Joined",
     "ABOUT_TEXT" : "From 2023 year MIPOVE.GE offers you a easy way to connect with people in your desired profession in the shortest time. Also, MIPOVE.GE allows you to develop and advance. If your activity matches any of the professions on our site and you want to be on this list yourself, Fill out the application bellow and send it to us.",
     "WORKS" : "Works",
     "WARNING" : "Page will be add soon !",
-        "CATEGORIES" : [
-            {
-                "CAT" : "All"
-            },
-            {
-              "CAT": "Furniture"
-            },
-            {
-                "CAT": "Paintings"
-            },
-            {
-                "CAT": "Chrome"
-            },
-            {
-                "CAT": "Watch repairers"
-            },
-            {
-              "CAT": "Leather workers"
-            },
-            {
-                "CAT": "Design"
-            }
-          ]
+    "CREATORS": "Creators",
+    "DEVELOPER" : "Developer ",
+    "DESIGNER" : "Designer ",
+    "GOOD_PERSON" : "Just a good human being",
+    "DEV_NAME" : "Tornike Burjanadze",
+    "DES_NAME" : "Mariam Khutsishvili",
+    "GOOD_NAME" : "Ana Vakhtangishvili",
+    "CATEGORIES" : [
+        {
+            "CAT" : "All"
+        },
+        {
+            "CAT": "Furniture"
+        },
+        {
+            "CAT": "Paintings"
+        },
+        {
+            "CAT": "Chrome"
+        },
+        {
+            "CAT": "Watch repairers"
+        },
+        {
+            "CAT": "Leather workers"
+        },
+        {
+            "CAT": "Design"
+        }
+    ]
+        
 }

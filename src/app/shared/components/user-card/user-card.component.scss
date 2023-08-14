@@ -48,5 +48,59 @@ a {
     transform: translateY(0);
 }
 .info-hover h4, p, span {
-    padding: 8px 5px;
+    padding: 6px 5px;
 } 
+.social {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+svg {
+    transition: 0.3s;
+}
+.path {
+    fill: $text;
+    transition: 0.3s;
+}
+.facebook {
+    z-index: 100;
+}
+.facebook:hover .svg {
+    transform: scale(1.2);
+}
+.facebook:hover .path {
+    fill: #4460A0;
+}
+.fill {
+    fill : $text;
+    transition: 0.3s;
+}
+.insta {
+    transition: 0.3s;
+    z-index: 100;
+    margin-left: 10px;
+}
+.insta:hover {
+    transform: scale(1.2);
+}
+.insta:hover .fill {
+    fill: url(#MyGradient);
+}
+
+
+@media screen and (max-width : 500px) {
+    .user-card {
+        width: 130px;
+        height: 160px;
+    }
+    .picture {
+        width: 130px;
+        height: 160px;
+    }
+    a{
+        font-size: 11px;
+    }
+    .info-hover h4, p, span {
+        padding: 5px 2px;
+    } 
+}

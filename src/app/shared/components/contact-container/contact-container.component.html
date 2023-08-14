@@ -1,9 +1,28 @@
 <div class="contact-container container">
     <div class="contact-details">
-        <h3>{{ "CONTACT" | translate }}</h3>
-        <div class="contact">
-            <app-contact-details [icon]="'email'" [text]="'mipove88@gmail.com'" ></app-contact-details>
-            <app-contact-details [icon]="'phone'" [text]="'555462090'" ></app-contact-details>
+        <div>
+            <h3>{{ "CONTACT" | translate }}</h3>
+            <div class="contact">
+                <app-contact-details [icon]="'email'" [text]="'mipove88@gmail.com'" ></app-contact-details>
+                <app-contact-details [icon]="'phone'" [text]="'555462090'" ></app-contact-details>
+            </div>
+        </div>
+        <div class="creators">
+            <h3>{{ "CREATORS" | translate }}</h3>
+            <div class="devs">
+                <div class="info">
+                    <span>{{ "DEVELOPER" | translate }}: </span>
+                    <span>{{ "DEV_NAME" | translate  }}</span>
+                </div>
+                <div class="info">
+                    <span>{{ "DESIGNER" | translate }} : </span>
+                    <span>{{ "DES_NAME" | translate }}</span>
+                </div>
+                <div class="info">
+                    <span> {{ "GOOD_PERSON" | translate }} : </span>
+                    <span> {{ "GOOD_NAME" | translate }} </span>
+                </div>
+            </div>
         </div>
     </div>
     <div class="contact-form">
