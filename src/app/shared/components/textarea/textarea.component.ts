@@ -10,8 +10,8 @@ export class TextareaComponent {
 
   @Input() labelText : string | undefined;
   @Input() rows : string | undefined;
-  @Input() cols : string | undefined;
   @Input() control! : FormControl
+  @Input() placeHolder : string = ''
 
 
 }

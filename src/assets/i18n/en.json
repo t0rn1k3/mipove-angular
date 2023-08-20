@@ -31,6 +31,14 @@
     "DEV_NAME" : "Tornike Burjanadze",
     "DES_NAME" : "Mariam Khutsishvili",
     "GOOD_NAME" : "Ana Vakhtangishvili",
+    "ADD_APPLICATIONS" : "Add application",
+    "TITLE": "Title", 
+    "PRICE" : "Price", 
+    "EX1": "(ex : Computer Table )", 
+    "EX2": "(ex : Some Price )", 
+    "EX3": "(ex : I want to order a computer table with length 1.5m, with 0.5m, height 1.2m... )", 
+    "FULL_DESC" : "Detailed escription",
+    "ADD" : "Add", 
     "CATEGORIES" : [
         {
             "CAT" : "All"

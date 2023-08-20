@@ -85,3 +85,8 @@ h3 {
         align-items: center;
     }
 }
+@media screen and (max-width :  500px) {
+    .info {
+        font-size: 8px;
+    }
+}

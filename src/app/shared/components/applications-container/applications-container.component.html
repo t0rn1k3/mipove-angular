@@ -1,6 +1,22 @@
-<div class="app-cont">
+<div class="app-cont" (click)="onModalOpen()">
     <div class="add">
-        <span>Add application</span>
-        <img class="add-icon" src="assets/icons/add.svg" alt="add">
+            <span>{{ "ADD_APPLICATIONS" | translate }}</span>
+            <img  class="add-icon" src="assets/icons/add.svg" alt="add">
     </div>
 </div>
+<div class="shadow">
+    <div class="modal-container">
+        <h2>{{ "ADD_APPLICATIONS" | translate }}</h2>
+        <form class="modal-form" [formGroup]="contactForm">
+            <div class="intro">
+                <app-input [control]="$any(contactForm.get('name'))" [labelText]="'TITLE' | translate " [placeHolder]="'EX1' | translate"></app-input>
+                <app-input [control]="$any(contactForm.get('price'))" [labelText]="'PRICE' | translate" [placeHolder]="'EX2' | translate"></app-input>
+            </div>
+            <div class="textarea">
+                <app-textarea [control]="$any(contactForm.get('textarea'))"  [labelText]="'FULL_DESC' | translate" [placeHolder]="'EX3' | translate"  [rows]="'5'"></app-textarea>
+            </div>
+            <app-button [text]="'ADD' | translate" ></app-button>
+        </form>
+    </div>
+</div>
+

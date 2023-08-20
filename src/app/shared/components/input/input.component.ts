@@ -12,6 +12,8 @@ export class InputComponent {
   @Input() type : string = '';
   @Input() labelText : string | undefined;
   @Input() isDirty = false;
+  @Input() placeHolder : string = ''
+  @Input() appText : string = ''
   @Input() control! : FormControl
 
   onChange(){
